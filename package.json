@@ -1,6 +1,6 @@
 {
   "name": "react-small-virtual-list",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "A tiny but mighty list virtualization component, with zero dependencies 💪",
   "sideEffects": false,
   "author": {
