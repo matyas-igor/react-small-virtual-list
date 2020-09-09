@@ -33,3 +33,23 @@ export const Default = (props?: Partial<Props>) => (
     {...props}
   />
 )
+
+export const Controlled = (props?: Partial<Props>) => {
+  const [index, setIndex] = React.useState(null)
+  const setNewIndex = React.useCallback(index => {
+    setIndex(null)
+    setTimeout(() => setIndex(index))
+  }, [])
+  return (
+    <div>
+      <Default scrollToIndex={index} {...props} />
+      <div style={{ paddingTop: 16 }}>
+        <button onClick={() => setNewIndex(5)}>Scroll to 5</button>
+        <button onClick={() => setNewIndex(15)}>Scroll to 15</button>
+        <button onClick={() => setNewIndex(30)}>Scroll to 30</button>
+      </div>
+    </div>
+  )
+}
+
+export const Smart = (props?: Partial<Props>) => <Controlled scrollToAlignment={'smart'} />

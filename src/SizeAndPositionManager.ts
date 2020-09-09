@@ -147,6 +147,16 @@ export default class SizeAndPositionManager {
       case ALIGNMENT.START:
         idealOffset = maxOffset
         break
+      case ALIGNMENT.SMART: {
+        const maxAvailableOffset = maxOffset + datum.size
+        const minAvailableOffset = minOffset - datum.size
+        idealOffset =
+          maxAvailableOffset > currentOffset && currentOffset > minAvailableOffset
+            ? currentOffset
+            : Math.max(minOffset, Math.min(maxOffset, currentOffset))
+        break
+      }
+      case ALIGNMENT.AUTO:
       default:
         idealOffset = Math.max(minOffset, Math.min(maxOffset, currentOffset))
     }

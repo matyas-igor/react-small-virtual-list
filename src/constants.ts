@@ -3,6 +3,7 @@ export enum ALIGNMENT {
   START = 'start',
   CENTER = 'center',
   END = 'end',
+  SMART = 'smart',
 }
 
 export enum DIRECTION {
