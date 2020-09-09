@@ -11,36 +11,10 @@ import {
   scrollProp,
   sizeProp,
 } from './constants'
-
-export { DIRECTION as ScrollDirection } from './constants'
-
-export type ItemPosition = 'absolute' | 'sticky'
-
-export interface ItemStyle {
-  position: ItemPosition
-  top?: number
-  left: number
-  width: string | number
-  height?: number
-  marginTop?: number
-  marginLeft?: number
-  marginRight?: number
-  marginBottom?: number
-  zIndex?: number
-}
+import { ItemInfo, ItemPosition, ItemStyle, RenderedRows } from './types'
 
 interface StyleCache {
   [id: number]: ItemStyle
-}
-
-export interface ItemInfo {
-  index: number
-  style: ItemStyle
-}
-
-export interface RenderedRows {
-  startIndex: number
-  stopIndex: number
 }
 
 export interface Props {
