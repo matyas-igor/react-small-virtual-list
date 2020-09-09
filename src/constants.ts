@@ -15,27 +15,27 @@ export enum SCROLL_CHANGE_REASON {
   REQUESTED = 'requested',
 }
 
-export const scrollProp = {
+export const scrollProp: { [key in DIRECTION]: string } = {
   [DIRECTION.VERTICAL]: 'scrollTop',
   [DIRECTION.HORIZONTAL]: 'scrollLeft',
 }
 
-export const sizeProp = {
+export const sizeProp: { [key in DIRECTION]: string } = {
   [DIRECTION.VERTICAL]: 'height',
   [DIRECTION.HORIZONTAL]: 'width',
 }
 
-export const positionProp = {
+export const positionProp: { [key in DIRECTION]: string } = {
   [DIRECTION.VERTICAL]: 'top',
   [DIRECTION.HORIZONTAL]: 'left',
 }
 
-export const marginProp = {
+export const marginProp: { [key in DIRECTION]: string } = {
   [DIRECTION.VERTICAL]: 'marginTop',
   [DIRECTION.HORIZONTAL]: 'marginLeft',
 }
 
-export const oppositeMarginProp = {
+export const oppositeMarginProp: { [key in DIRECTION]: string } = {
   [DIRECTION.VERTICAL]: 'marginBottom',
   [DIRECTION.HORIZONTAL]: 'marginRight',
 }

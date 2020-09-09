@@ -1,16 +1,28 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "lib": ["dom", "es2017", "es2019.array"],
     "baseUrl": "src",
     "rootDir": "src",
+    "target": "es2016",
+    "module": "es2015",
+    "declaration": true,
+    "moduleResolution": "node",
+    "declarationDir": "types",
     "jsx": "react",
-    "noImplicitAny": true,
-    "typeRoots": ["./node_modules/@types"],
-    "allowJs": true,
-    "declaration": false,
-    "resolveJsonModule": true
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "es2017"
+    ],
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": [
     "src/**/*"
