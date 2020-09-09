@@ -18,24 +18,24 @@ export enum SCROLL_CHANGE_REASON {
 export const scrollProp = {
   [DIRECTION.VERTICAL]: 'scrollTop',
   [DIRECTION.HORIZONTAL]: 'scrollLeft',
-};
+}
 
 export const sizeProp = {
   [DIRECTION.VERTICAL]: 'height',
   [DIRECTION.HORIZONTAL]: 'width',
-};
+}
 
 export const positionProp = {
   [DIRECTION.VERTICAL]: 'top',
   [DIRECTION.HORIZONTAL]: 'left',
-};
+}
 
 export const marginProp = {
   [DIRECTION.VERTICAL]: 'marginTop',
   [DIRECTION.HORIZONTAL]: 'marginLeft',
-};
+}
 
 export const oppositeMarginProp = {
   [DIRECTION.VERTICAL]: 'marginBottom',
   [DIRECTION.HORIZONTAL]: 'marginRight',
-};
+}
