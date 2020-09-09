@@ -32,7 +32,7 @@ export interface Props {
   stickyIndices?: number[]
   style?: React.CSSProperties
   onItemsRendered?({ startIndex, stopIndex }: RenderedRows): void
-  onScroll?(offset: number, event: UIEvent): void
+  onScroll?(offset: number, event?: UIEvent): void
   renderItem(itemInfo: ItemInfo): React.ReactNode
 }
 
@@ -159,11 +159,18 @@ export default class VirtualList extends React.PureComponent<Props, State> {
         offset: nextProps.scrollOffset || 0,
         scrollChangeReason: SCROLL_CHANGE_REASON.REQUESTED,
       })
+      if (typeof nextProps.onScroll === 'function') {
+        nextProps.onScroll(nextProps.scrollOffset || 0)
+      }
     } else if (typeof nextProps.scrollToIndex === 'number' && (scrollPropsHaveChanged || itemPropsHaveChanged)) {
+      const offset = this.getOffsetForIndex(nextProps.scrollToIndex, nextProps.scrollToAlignment, nextProps.itemCount)
       this.setState({
-        offset: this.getOffsetForIndex(nextProps.scrollToIndex, nextProps.scrollToAlignment, nextProps.itemCount),
+        offset,
         scrollChangeReason: SCROLL_CHANGE_REASON.REQUESTED,
       })
+      if (typeof nextProps.onScroll === 'function') {
+        nextProps.onScroll(offset)
+      }
     }
   }
 
