@@ -1,7 +1,5 @@
-/coverage
 /node_modules
-/build
-/build-intermediate
+/dist
 /types
 npm-debug.log*
 .DS_Store
