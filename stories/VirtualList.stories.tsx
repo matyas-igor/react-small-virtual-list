@@ -1,5 +1,5 @@
 import * as React from 'react'
-import VirtualList, { ItemStyle, Props } from '../src'
+import VirtualList, { ItemStyle, Props, ScrollAlignment } from '../src'
 
 export default {
   title: 'VirtualList',
@@ -52,4 +52,4 @@ export const Controlled = (props?: Partial<Props>) => {
   )
 }
 
-export const Smart = (props?: Partial<Props>) => <Controlled scrollToAlignment={'smart'} />
+export const Smart = (props?: Partial<Props>) => <Controlled scrollToAlignment={ScrollAlignment.SMART} />

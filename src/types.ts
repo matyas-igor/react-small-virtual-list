@@ -1,4 +1,4 @@
-export { DIRECTION as ScrollDirection } from './constants'
+export { DIRECTION as ScrollDirection, ALIGNMENT as ScrollAlignment } from './constants'
 
 export type ItemPosition = 'absolute' | 'sticky'
 
