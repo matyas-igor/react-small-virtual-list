@@ -4,10 +4,10 @@ import SizeAndPositionManager, {ItemSize} from './SizeAndPositionManager';
 import {
   ALIGNMENT,
   DIRECTION,
-  SCROLL_CHANGE_REASON,
   marginProp,
   oppositeMarginProp,
   positionProp,
+  SCROLL_CHANGE_REASON,
   scrollProp,
   sizeProp,
 } from './constants';

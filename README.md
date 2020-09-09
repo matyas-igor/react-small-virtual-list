@@ -2,17 +2,12 @@
 <img src="https://cloud.githubusercontent.com/assets/1416436/23387281/9a628ec4-fd29-11e6-9a1a-09f755c21a14.png" width="224"/>
 </div>
 
-# react-tiny-virtual-list
+# react-small-virtual-list (ex. react-tiny-virtual-list)
 
 > A tiny but mighty list virtualization library, with zero dependencies 💪
 
-[![npm version](https://img.shields.io/npm/v/react-tiny-virtual-list.svg)](https://www.npmjs.com/package/react-tiny-virtual-list)
-[![npm downloads](https://img.shields.io/npm/dm/react-tiny-virtual-list.svg)](https://www.npmjs.com/package/react-tiny-virtual-list)
-[![Build Status](https://travis-ci.org/clauderic/react-tiny-virtual-list.svg?branch=master)](https://travis-ci.org/clauderic/react-tiny-virtual-list)
-[![codecov](https://codecov.io/gh/clauderic/react-tiny-virtual-list/branch/master/graph/badge.svg)](https://codecov.io/gh/clauderic/react-tiny-virtual-list)
-![typescript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/clauderic/react-tiny-virtual-list/blob/master/LICENSE)
-[![Gitter](https://badges.gitter.im/clauderic/react-tiny-virtual-list.svg)](https://gitter.im/clauderic/react-tiny-virtual-list)
+[![npm version](https://img.shields.io/npm/v/react-small-virtual-list.svg)](https://www.npmjs.com/package/react-small-virtual-list)
+[![npm downloads](https://img.shields.io/npm/dm/react-small-virtual-list.svg)](https://www.npmjs.com/package/react-small-virtual-list)
 
 - **Tiny & dependency free** – Only 3kb gzipped
 - **Render millions of items**, without breaking a sweat
@@ -20,26 +15,24 @@
 - **Supports fixed** or **variable** heights/widths
 - **Vertical** or **Horizontal** lists
 
-Check out the [demo](https://clauderic.github.io/react-tiny-virtual-list/) for some examples, or take it for a test drive right away in [Code Sandbox](https://codesandbox.io/s/kymm7z9qr).
-
 ## Getting Started
 
 Using [npm](https://www.npmjs.com/):
 
 ```
-npm install react-tiny-virtual-list --save
+npm install react-small-virtual-list --save
 ```
 
 ES6, CommonJS, and UMD builds are available with each distribution. For example:
 
 ```js
-import VirtualList from 'react-tiny-virtual-list';
+import VirtualList from 'react-small-virtual-list';
 ```
 
 You can also use a global-friendly UMD build:
 
 ```html
-<script src="react-tiny-virtual-list/umd/react-tiny-virtual-list.js"></script>
+<script src="react-small-virtual-list/umd/react-small-virtual-list.js"></script>
 <script>
 var VirtualList = window.VirtualList;
 ...
@@ -51,7 +44,7 @@ var VirtualList = window.VirtualList;
 ```js
 import React from 'react';
 import {render} from 'react-dom';
-import VirtualList from 'react-tiny-virtual-list';
+import VirtualList from 'react-small-virtual-list';
 
 const data = ['A', 'B', 'C', 'D', 'E', 'F', ...];
 
@@ -103,17 +96,17 @@ However, if you're passing a function to `itemSize`, that type of comparison is 
 
 ### Common Issues with PureComponent
 
-`react-tiny-virtual-list` uses [PureComponent](https://reactjs.org/docs/react-api.html#reactpurecomponent), so it only updates when it's props change. Therefore, if only the order of your data changes (eg `['a','b','c']` => `['d','e','f']`), `react-tiny-virtual-list` has no way to know your data has changed and that it needs to re-render.
+`react-small-virtual-list` uses [PureComponent](https://reactjs.org/docs/react-api.html#reactpurecomponent), so it only updates when it's props change. Therefore, if only the order of your data changes (eg `['a','b','c']` => `['d','e','f']`), `react-small-virtual-list` has no way to know your data has changed and that it needs to re-render.
 
 You can force it to re-render by calling [forceUpdate](https://reactjs.org/docs/react-component.html#forceupdate) on it or by passing it an extra prop that will change every time your data changes.
 
 ## Reporting Issues
 
-Found an issue? Please [report it](https://github.com/clauderic/react-tiny-virtual-list/issues) along with any relevant details to reproduce it. If you can, please provide a live demo replicating the issue you're describing. You can [fork this Code Sandbox](https://codesandbox.io/s/kymm7z9qr) as a starting point.
+Found an issue? Please [report it](https://github.com/matyas-igor/react-small-virtual-list/issues) along with any relevant details to reproduce it. If you can, please provide a live demo replicating the issue you're describing. You can [fork this Code Sandbox](https://codesandbox.io/s/kymm7z9qr) as a starting point.
 
 ## Contributions
 
-Feature requests / pull requests are welcome, though please take a moment to make sure your contributions fits within the scope of the project. [Learn how to contribute](https://github.com/clauderic/react-tiny-virtual-list/blob/master/CONTRIBUTING.md)
+Feature requests / pull requests are welcome, though please take a moment to make sure your contributions fits within the scope of the project. [Learn how to contribute](https://github.com/matyas-igor/react-small-virtual-list/blob/master/CONTRIBUTING.md)
 
 ## Acknowledgments
 
@@ -121,4 +114,4 @@ This library draws inspiration from [react-virtualized](https://github.com/bvaug
 
 ## License
 
-react-tiny-virtual-list is available under the MIT License.
+react-small-virtual-list is available under the MIT License.
