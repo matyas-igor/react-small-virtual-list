@@ -42,7 +42,7 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "release": "yarn build && np",
+    "release": "yarn build && np --no-2fa --no-yarn",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
