@@ -1,2 +1,2 @@
-export { default, Props } from './VirtualList'
+export { default, Props, State } from './VirtualList'
 export * from './types'
