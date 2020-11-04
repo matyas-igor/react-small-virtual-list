@@ -1,8 +1,22 @@
 import * as React from 'react'
 import VirtualList, { ItemStyle, ScrollAlignment, ScrollDirection } from '../src'
 
+import { Title, Subtitle, Primary, Stories } from '@storybook/addon-docs/blocks'
+
 export default {
   title: 'VirtualList',
+  parameters: {
+    docs: {
+      page: () => (
+        <>
+          <Title />
+          <Subtitle />
+          <Primary />
+          <Stories />
+        </>
+      ),
+    },
+  },
 }
 
 const STICKY_INDICES = [0, 5, 8, 15, 30, 50, 100, 200]
