@@ -2,7 +2,13 @@
 <img src="https://cloud.githubusercontent.com/assets/1416436/23387281/9a628ec4-fd29-11e6-9a1a-09f755c21a14.png" width="224"/>
 </div>
 
-# react-small-virtual-list (ex. react-tiny-virtual-list)
+# `react-small-virtual-list`
+
+Ex. [`react-tiny-virtual-list`](https://github.com/clauderic/react-tiny-virtual-list)
+
+Live demo: https://react-small-virtual-list.netlify.app/ 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/70c02e8c-e5f3-478b-86ef-8d83a5fde844/deploy-status)](https://app.netlify.com/sites/react-small-virtual-list/deploys)
 
 > A tiny but mighty list virtualization library, with zero dependencies 💪
 
